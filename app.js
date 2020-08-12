@@ -1,3 +1,9 @@
+// DOM traversal --> downside when we change the html order
+const ul = document.body.firstElementChild.nextElementSibling; // body --> header --> ul
+const firstLi = ul.firstElementChild; // Expected a first list item
+
+console.log(firstLi);
+
 // Get the h1 element & change it by getElementById
 const h1 = document.getElementById('main-title');
 
@@ -9,6 +15,7 @@ h1.style.backgroundColor = 'black';
 const li = document.querySelector('li:last-of-type');
 li.textContent = li.textContent + ' (Changed)!';
 
+// Select body of the document
 const body = document.body;
 
 // Select all items of the list
