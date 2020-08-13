@@ -4,6 +4,25 @@ const firstLi = ul.firstElementChild; // Expected a first list item
 
 console.log(firstLi);
 
+const section = document.querySelector('section');
+const button = document.querySelector('button');
+
+// section.style.backgroundColor = 'blue';
+section.className = 'red-bg';
+
+button.addEventListener('click', () => {
+    // Using className method
+    // if (section.className === 'red-bg visible') {
+    //     section.className = 'red-bg invisible';
+    // } else {
+    //     section.className = 'red-bg visible';
+    // }
+
+    // Using classList
+    // section.classList.toggle('visible');
+    section.classList.toggle('invisible');
+});
+
 // Get the h1 element & change it by getElementById
 const h1 = document.getElementById('main-title');
 
