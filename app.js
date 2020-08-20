@@ -4,6 +4,7 @@ const firstLi = ul.firstElementChild; // Expected a first list item
 
 console.log(firstLi);
 
+// Manipulate DOM elements
 const section = document.querySelector('section');
 const button = document.querySelector('button');
 
